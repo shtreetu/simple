@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe2fefb2-9a62-48ea-927a-411b64f86022" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/maintest/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/maintest/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/maintest/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/maintest/Main.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,8 +39,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/maintest/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="204" column="26" selection-start-line="204" selection-start-column="26" selection-end-line="204" selection-end-column="26" />
+            <state relative-caret-position="256">
+              <caret line="207" lean-forward="true" selection-start-line="207" selection-end-line="207" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,7 +83,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="28" />
     <option name="y" value="13" />
     <option name="width" value="1346" />
@@ -350,9 +348,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Main - 2018.05.21 at 12h 06m 14s.xml">
-      <configuration name="Main" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="Main - 2018.05.21 at 13h 42m 21s.xml">
       <configuration name="Main" configurationId="TestNG" />
     </history-entry>
@@ -378,6 +373,9 @@
       <configuration name="Main" configurationId="TestNG" />
     </history-entry>
     <history-entry file="Main - 2018.05.21 at 14h 35m 46s.xml">
+      <configuration name="Main" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Main - 2018.05.21 at 14h 40m 24s.xml">
       <configuration name="Main" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -878,8 +876,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/maintest/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="204" column="26" selection-start-line="204" selection-start-column="26" selection-end-line="204" selection-end-column="26" />
+        <state relative-caret-position="256">
+          <caret line="207" lean-forward="true" selection-start-line="207" selection-end-line="207" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

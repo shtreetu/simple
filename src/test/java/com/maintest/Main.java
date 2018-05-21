@@ -199,11 +199,11 @@ public class Main {
 
 
     }
-    @Test (priority = 12)
-    public void dashboard (){
-        WebElement dashboard = browser.findElement(By.linkText("Viral Launch"));
-        dashboard.click();
-    }
+//    @Test (priority = 12)
+//    public void dashboard (){
+//        WebElement dashboard = browser.findElement(By.linkText("Viral Launch"));
+//        dashboard.click();
+//    }
 }
 
 
