@@ -34,7 +34,6 @@ public class Main {
         loginButton.click();
 
 
-
         try {
             Thread.sleep(15000);
         } catch (InterruptedException e) {
@@ -60,7 +59,7 @@ public class Main {
         WebElement addQuestion = browser.findElement(By.linkText("Add Question"));
         addQuestion.click();
         String currentUrl = browser.getCurrentUrl();
-        Assert.assertEquals(currentUrl,"https://ticket-dev.fusemachines.com/add-question");
+        Assert.assertEquals(currentUrl, "https://ticket-dev.fusemachines.com/add-question");
 
 
     }
@@ -131,13 +130,90 @@ public class Main {
 
     @Test(priority = 8)
     public void Setting() {
-     WebElement dropDown = browser.findElement(By.cssSelector(".fa.fa-angle-down"));
-     dropDown.click();
-     WebElement selectSetting = browser.findElement(By.className("dropdown-item"));
-     selectSetting.click();
+        WebElement dropDown = browser.findElement(By.cssSelector(".fa.fa-angle-down"));
+        dropDown.click();
+        WebElement selectSetting = browser.findElement(By.className("dropdown-item"));
+        selectSetting.click();
+    }
+
+
+    @Test(priority = 9)
+    public void Adduser() {
+        WebElement addUser = browser.findElement(By.linkText("Add User"));
+        addUser.click();
+
+
+        WebElement firstName = browser.findElement(By.name("firstName"));
+        firstName.sendKeys("Ritu");
+
+        WebElement lastName = browser.findElement(By.name("lastName"));
+        lastName.sendKeys("Stha");
+
+        WebElement email = browser.findElement(By.name("email"));
+        email.sendKeys("ritu12@fusemachines.com");
+
+        WebElement password = browser.findElement(By.name("password"));
+        password.sendKeys("Test1234");
+
+        WebElement confirmPassword = browser.findElement(By.name("confirmPassword"));
+        confirmPassword.sendKeys("Test1234");
+
+        WebElement addButton = browser.findElement(By.cssSelector(".save-btn.G1Q-zPSDVcBZ5m9TS9wnC"));
+        addButton.click();
+
+        WebElement closebutton = browser.findElement(By.cssSelector(".fas.fa-chevron-down.pull-right"));
+        closebutton.click();
+    }
+
+    @Test(priority = 10)
+    public void Revoke() {
+        WebElement revoke = browser.findElement(By.linkText("Revoke Zendesk"));
+        revoke.click();
+        WebElement revokebutton = browser.findElement(By.cssSelector(".cancel.G1Q-zPSDVcBZ5m9TS9wnC"));
+        revokebutton.click();
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        WebElement selectYes = browser.findElement(By.cssSelector(".btn.save"));
+        selectYes.click();
 
     }
+
+    @Test(priority = 11)
+    public void integrate() {
+        WebElement integrateUrl = browser.findElement(By.name("url"));
+        integrateUrl.sendKeys("https://fusemachines101.zendesk.com");
+
+        WebElement email = browser.findElement(By.name("email"));
+        email.sendKeys("demoem123@gmail.com");
+
+        WebElement API = browser.findElement(By.name("key"));
+        API.sendKeys("6ucD1OipFvccTSEmMevwO6PvREVaeVYryd9qbaTl");
+
+        WebElement integrateButton = browser.findElement(By.cssSelector(".save-btn.G1Q-zPSDVcBZ5m9TS9wnC"));
+        integrateButton.click();
+
+
+    }
+    @Test (priority = 12)
+    public void dashboard (){
+        WebElement dashboard = browser.findElement(By.linkText("Viral Launch"));
+        dashboard.click();
+    }
 }
+
+
+
+
+
+
+
+
+
 
 
 
